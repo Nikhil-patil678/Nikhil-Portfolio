@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Nikhil Patil" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Nikhil Patil">Nikhil Patil</h1>
+
+          <p class="title">Cloud & Devops Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:np3250072@gmail.com" class="contact-link">np3250072@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="phone:+8767905703" class="contact-link">+91 8767905703</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-05-17">May 17, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Jalgaon , Maharashtra , India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+             I'm an aspiring Cloud Engineer from India with a strong passion for cloud computing, automation, and infrastructure deployment.
+             As a recent graduate, I’ve been actively learning and building projects using AWS and other cloud technologies to strengthen my skills.
+          </p>
+
+          <p>
+            My goal is to design and manage cloud environments that are reliable, secure, and scalable.
+            I enjoy exploring services like EC2, S3, RDS, and Lambda, and applying my knowledge through hands-on practice and certifications.
+            I’m eager to contribute to real-world cloud projects, continuously learn from industry professionals, and grow as a cloud-native solutions expert.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+
+<section class="service">
+
+  <h3 class="h3 service-title">Services I Know</h3>
+
+  <ul class="service-list">
+
+    <!-- Cloud Services -->
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./assets/images/icon-cloud.svg.svg" alt="cloud icon" width="80">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Cloud Services (AWS)</h4>
+        <p class="service-item-text">
+          Knowledge of deploying and managing cloud infrastructure using services like EC2, S3, RDS, and Lambda. Familiar with IAM, VPC, and basic automation.
+        </p>
+      </div>
+    </li>
+
+    <!-- Linux & Server Management -->
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./assets/images/Linux.png" alt="linux icon" width="80">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Linux & Server Management</h4>
+        <p class="service-item-text">
+          Hands-on experience with Linux systems, EC2 instances, and basic server setup and configuration tasks.
+        </p>
+      </div>
+    </li>
+
+    <!-- Networking Basics -->
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./assets/images/internet.icon.png" alt="network icon" width="80">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Networking & Security</h4>
+        <p class="service-item-text">
+          Basic understanding of cloud networking (VPC, subnets, routing), and securing resources using Security Groups and IAM policies.
+        </p>
+      </div>
+    </li>
+
+    <!-- Scripting & Automation -->
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./assets/images/script.png" alt="script icon" width="80">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Automation & Scripting</h4>
+        <p class="service-item-text">
+          Familiar with writing shell scripts and using CLI tools to automate tasks and manage AWS resources.
+        </p>
+      </div>
+    </li>
+
+  </ul>
+</section>
+
+
+
+        <!--
+          - testimonials
+        -->
+
+  <section class="testimonials">
+
+  <h3 class="h3 testimonials-title">My Cloud Journey</h3>
+
+  <ul class="testimonials-list has-scrollbar">
+
+    <li class="testimonials-item">
+      <div class="content-card">
+        <h4 class="h4 testimonials-item-title">Self-Learning</h4>
+        <p class="testimonials-text">
+          Completed multiple AWS and Linux beginner tutorials and labs. Actively exploring core cloud services and real-world architecture.
+        </p>
+      </div>
+    </li>
+
+    <li class="testimonials-item">
+      <div class="content-card">
+        <h4 class="h4 testimonials-item-title">Hands-on Practice</h4>
+        <p class="testimonials-text">
+          Practicing on AWS Free Tier using EC2, S3, IAM, and CloudWatch. Building and deploying demo apps to enhance my skills.
+        </p>
+      </div>
+    </li>
+
+    <li class="testimonials-item">
+      <div class="content-card">
+        <h4 class="h4 testimonials-item-title">Career Goals</h4>
+        <p class="testimonials-text">
+          Aim to become a certified AWS Solutions Architect and contribute to building secure and efficient cloud solutions for real businesses.
+        </p>
+      </div>
+    </li>
+
+  </ul>
+
+</section>
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Cloud & DevOps Services I Know</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/EC2.svg" alt="EC2">
+              </a>
+            </li>
+              
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/RDS.svg" alt="RDS">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/Lambda.svg" alt="Lambda">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/CloudWatch.svg" alt="CloudWatch">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/docker.png" alt="docker">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/jenkins-svgrepo-com.svg" alt="jenkins-svgrepo-com">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Dr.Babasaheb Ambedkar Technological University , Raigad ( B.Tech in Computer Engineering)</h4>
+
+              <span>2021 — 2025</span>
+
+              <p class="timeline-text">
+                Motivated and detail-oriented Cloud & DevOps enthusiast with hands-on experience in AWS services like EC2, S3, RDS, Lambda, IAM, and CloudWatch. Familiar with DevOps tools such as Git, Docker, Jenkins, Ansible, and Terraform for automation, CI/CD, and infrastructure as code. Comfortable working with Linux systems and basic Kubernetes concepts, with a strong focus on building scalable, secure, and efficient cloud solutions
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Cravita Technology</h4>
+
+              <span>April-2025 — Present</span>
+
+              <p class="timeline-text">
+                Supported live AWS deployments using EC2, IAM, Auto Scaling, and CloudWatch. Gained hands-on experience in infrastructure automation and contributed to scalable cloud solutions.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">AWS EC2</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">S3 Bucket</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">IAM</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+             <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">RDS</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+             <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">LAMBDA</h5>
+                <data value="50">65%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Project</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://github.com/Nikhil-patil678/Auto-Scaling-group-With-Load-Balancer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Arch1.png" alt="dsm." loading="lazy" class="project-images">
+                </figure>
+
+                <h3 class="project-title">Auto-Scaling-With-Load-Balancer-Deployment</h3>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Cloud Deployment.">
+              <a href="https://github.com/Nikhil-patil678/registration-form-deployment">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Registration.png" alt="Registration Form Deployment" loading="lazy" class="project-images">
+                </figure>
+
+                <h3 class="project-title">Registration-Form-Deployment.</h3>
+
+                
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/Nikhil-patil678/Three-Tier-Architecture">
+               
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sc1.png" alt="brawlhalla" loading="lazy" class="project-images">
+                </figure>
+
+                <h3 class="project-title">Three-Tier-Artitecture</h3>
+              </a>
+            </li>
+
+            <!-- 4-->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/Nikhil-patil678/Python-App-CICD">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/download.jpg" alt="Artitecture" loading="lazy" class="project-images">
+                </figure>
+
+                <h3 class="project-title" >Python-App-CICD</h3>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              
+              <a href="https://github.com/Nikhil-patil678/Node.js-Application-Deployment">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/node.png" alt="brawlhalla" loading="lazy" class="project-images">
+                </figure>
+
+                <h3 class="project-title">Node.js-Application-Deployment</h3>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              
+              <a href="https://github.com/Nikhil-patil678/Wordpress-Deployment">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/download.png" alt="brawlhalla" loading="lazy" class="project-images">
+                </figure>
+
+                <h3 class="project-title">Wordpress-Deployment</h3>
+              </a>
+            </li>
+
+           
+            
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@np3250072/virtualization-explained-what-it-is-and-why-it-matters-in-modern-it-d9b93258b2c4">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog3.jpg" alt="Virtualization Explained: What It Is and Why It Matters in Modern IT" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <h3 class="h3 blog-item-title">Virtualization Explained: What It Is and Why It Matters in Modern IT</h3>
+
+                  <p class="blog-text">
+                    Learn what virtualization is, how it works, its types, benefits, and real-world applications. A complete guide for IT enthusiasts, developers, and businesses.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@np3250072/aws-for-beginners-a-complete-guide-to-start-your-cloud-journey-ee45c638ea15">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog2.jpg" alt="AWS for Beginners: A Complete Guide to Start Your Cloud Journey" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <h3 class="h3 blog-item-title">AWS for Beginners: A Complete Guide to Start Your Cloud Journey</h3>
+
+                  <p class="blog-text">
+                   If you’re a student, fresher, or IT professional wondering how to start with AWS, this guide is for you.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@np3250072/beginners-guide-to-basics-linux-commands-311cde648b7a">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Blog1.jpg" alt="Beginner’s Guide to Basics Linux Commands" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <h3 class="h3 blog-item-title">Beginner’s Guide to Basics Linux Commands</h3>
+
+                  <p class="blog-text">
+                    In this blog, I’ll cover the Linux Commands every beginner should know , with examples you can try yourself .
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.123456789012!2d73.8567!3d18.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1e2f2e9b1ab%3A0x1234567890abcdef!2sPune%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+          
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
