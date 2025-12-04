@@ -1,0 +1,43 @@
+pipeline {
+    agent any
+
+    environment {
+        SSH_CRED = 'node-app-key-credentials'
+        SERVER_IP = '54.196.240.222'
+        REMOTE_USER = 'ubuntu'
+        WEB_DIR = '/var/www/html'
+    }
+
+    stages {
+        stage('Clone Repo') {
+            steps {
+                git url: 'https://github.com/Nikhil-patil678/Nikhil-Portfolio.git', branch: 'main'
+            }
+        }
+
+        stage('Deploy to Apache Server') {
+            steps {
+                sshagent(credentials: ["${SSH_CRED}"]) {
+                    sh '''
+                        echo "Cleaning old files on server..."
+                        ssh -o StrictHostKeyChecking=no ${REMOTE_USER}@${SERVER_IP} "sudo rm -rf ${WEB_DIR}/*"
+
+                        echo "Uploading project files to /tmp..."
+                        scp -r index.html assets ${REMOTE_USER}@${SERVER_IP}:/tmp/
+
+                        echo "Verifying /tmp content..."
+                        ssh -o StrictHostKeyChecking=no ${REMOTE_USER}@${SERVER_IP} "ls -l /tmp"
+
+                        echo "Deploying to Apache directory..."
+                        ssh -o StrictHostKeyChecking=no ${REMOTE_USER}@${SERVER_IP} "sudo cp -r /tmp/index.html /tmp/assets ${WEB_DIR}/"
+
+                        echo "Restarting Apache to clear cache..."
+                        ssh -o StrictHostKeyChecking=no ${REMOTE_USER}@${SERVER_IP} "sudo systemctl restart apache2"
+
+                        echo "✅ Deployment completed!"
+                    '''
+                }
+            }
+        }
+    }
+}
