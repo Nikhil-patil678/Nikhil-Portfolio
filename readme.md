@@ -159,12 +159,6 @@ bash
 
 ![my image](./Images/Screenshot%202025-12-05%20141856.png)
 
-* ### Access URL : 
-
-bash 
-
-    http://<public-ip of remote-server>:3000
-
 
 ## Setup Github Hooks 
 
@@ -191,7 +185,7 @@ bash
 #### Once you run the Jenkins job (or push new code to trigger automatically), open a browser and visit:
 bash
     
-    http://54.221.183.57/
+    http://<public-ip of remote-server>:80
     
 ---
 
